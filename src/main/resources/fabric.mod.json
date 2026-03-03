@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "flashbackblacklist",
+  "version": "${version}",
+  "name": "FlashbackBlacklist",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "GPL-3.0",
+  "icon": "assets/flashbackblacklist/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "me.playgamesgo.flashbackblacklist.FlashbackblacklistClient"
+    ],
+    "modmenu": [
+      "me.playgamesgo.flashbackblacklist.ModMenuIntegration"
+    ]
+  },
+  "mixins": [
+    "flashbackblacklist.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric-api": "*",
+    "minecraft": "${minecraft_version}",
+    "flashback": "*",
+    "yet_another_config_lib_v3": "*"
+  }
+}
